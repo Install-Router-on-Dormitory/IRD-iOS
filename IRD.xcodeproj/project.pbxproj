@@ -15,6 +15,7 @@
 		468E78852955346700328994 /* BlackHanSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468E78842955346700328994 /* BlackHanSans-Regular.ttf */; };
 		468E788F2955356E00328994 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E788E2955356E00328994 /* Color+hex.swift */; };
 		468E78D9295730F600328994 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E78D8295730F600328994 /* HomeView.swift */; };
+		46D15787295916EA00D3972C /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D15786295916EA00D3972C /* NFCReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		468E78862955346F00328994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		468E788E2955356E00328994 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		468E78D8295730F600328994 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		46D15786295916EA00D3972C /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		468E788B2955356400328994 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				46D15785295916E500D3972C /* NFC */,
 				468E788C2955356600328994 /* Extension */,
 			);
 			path = Utils;
@@ -159,6 +162,14 @@
 				468E78D8295730F600328994 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		46D15785295916E500D3972C /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				46D15786295916EA00D3972C /* NFCReader.swift */,
+			);
+			path = NFC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 			files = (
 				468E787029551B8500328994 /* ContentView.swift in Sources */,
 				468E788F2955356E00328994 /* Color+hex.swift in Sources */,
+				46D15787295916EA00D3972C /* NFCReader.swift in Sources */,
 				468E786E29551B8500328994 /* IRDApp.swift in Sources */,
 				468E78D9295730F600328994 /* HomeView.swift in Sources */,
 				468E787E29551B9E00328994 /* SigninView.swift in Sources */,

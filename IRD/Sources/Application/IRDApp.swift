@@ -1,17 +1,20 @@
-//
-//  IRDApp.swift
-//  IRD
-//
-//  Created by 최형우 on 2022/12/23.
-//
-
 import SwiftUI
 
 @main
 struct IRDApp: App {
+    @StateObject var sceneFlowState = SceneFlowState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            switch sceneFlowState.sceneFlow {
+            case .signin:
+                SigninView()
+                    .environmentObject(sceneFlowState)
+                
+            case .home:
+                HomeView()
+                    .environmentObject(sceneFlowState)
+            }
         }
     }
 }

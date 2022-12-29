@@ -1,22 +1,46 @@
 import SwiftUI
+import Alamofire
 
 struct HomeView: View {
+    @EnvironmentObject var sceneFlowState: SceneFlowState
+    @State var profileURL: String = ""
+    @State var grade: Int = 0
+    @State var classNum = 0
+    @State var num = 0
+    @State var name = ""
+    let reader = NFCReader()
+
     var body: some View {
         VStack {
             HStack(spacing: 16) {
-                Image(systemName: "person")
-                    .resizable()
-                    .frame(width: 48, height: 48)
-                    .clipShape(Circle())
+                AsyncImage(url: URL(string: profileURL)) { image in
+                    image
+                        .resizable()
+                } placeholder: {
+                    Image(systemName: "person")
+                        .resizable()
+                }
+                .frame(width: 48, height: 48)
+                .clipShape(Circle())
 
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("2118")
+                    Text("\(grade)\(classNum)\(num > 10 ? "\(num)" : "0\(num)")")
                         .font(.headline)
 
-                    Text("변찬우")
+                    Text(name)
                 }
 
                 Spacer()
+
+                Button {
+                    Keychain.shared.delete(type: .accessToken)
+                    Keychain.shared.delete(type: .refreshToken)
+                    sceneFlowState.sceneFlow = .signin
+                } label: {
+                    Image(systemName: "door.left.hand.open")
+                        .foregroundColor(.red)
+                }
+                .padding(.trailing, 4)
             }
             .padding(4)
             .background {
@@ -28,7 +52,14 @@ struct HomeView: View {
             Spacer()
 
             Button {
-                
+                guard let email = UserDefaults.standard.string(
+                    forKey: UserDefaultsKeys.email.rawValue
+                ) else {
+                    return
+                }
+                reader.scan(data: "sucuess\(email)") {
+                    print($0)
+                }
             } label: {
                 VStack {
                     HStack {
@@ -50,7 +81,34 @@ struct HomeView: View {
 
             Spacer()
         }
+        .onAppear {
+            fetchMyProfile()
+        }
         .padding(16)
+    }
+
+    func fetchMyProfile() {
+        let url = "http://10.82.20.103:8080/user"
+        AF.request(
+            URL(string: url)!,
+            method: .get,
+            headers: [
+                "Authorization": "Bearer \(Keychain.shared.load(type: .accessToken))"
+            ]
+        ).responseDecodable(of: MyProfileDTO.self) { response in
+            print(String(data: response.data ?? .init(), encoding: .utf8))
+            switch response.result {
+            case let .success(profile):
+                self.profileURL = profile.profileUri ?? ""
+                self.grade = profile.grade
+                self.classNum = profile.classNum
+                self.num = profile.num
+                self.name = profile.name
+
+            case let .failure(err):
+                print(err)
+            }
+        }
     }
 }
 

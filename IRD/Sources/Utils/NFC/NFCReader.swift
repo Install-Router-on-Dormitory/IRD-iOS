@@ -32,13 +32,9 @@ public final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
                 case .readWrite:
                     try await tag.writeNDEF(
                         .init(records: [
-                            .wellKnownTypeTextPayload(string: actualData ?? "", locale: .current)!
+                            .wellKnownTypeTextPayload(string: "\(actualData ?? "")", locale: Locale(identifier: "ko_kr"))!
                         ])
                     )
-                    let message = try await tag.readNDEF()
-                    if let uuid = message.records.first?.wellKnownTypeTextPayload().0, let action = action {
-                        action(uuid)
-                    }
                     nfcInvalidateAlert(session: session, message: "전송에 성공했습니다!")
                 default:
                     nfcInvalidateAlert(session: session, message: "NFC 태그에 연결할 수 없어요!")

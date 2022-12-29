@@ -15,7 +15,18 @@
 		468E78852955346700328994 /* BlackHanSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468E78842955346700328994 /* BlackHanSans-Regular.ttf */; };
 		468E788F2955356E00328994 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E788E2955356E00328994 /* Color+hex.swift */; };
 		468E78D9295730F600328994 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E78D8295730F600328994 /* HomeView.swift */; };
+		46AD560E295D6651006858AC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 46AD560D295D6651006858AC /* Alamofire */; };
+		46AD5613295D6858006858AC /* CodeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5612295D6858006858AC /* CodeDTO.swift */; };
+		46AD5617295D6994006858AC /* IRDToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5616295D6994006858AC /* IRDToast.swift */; };
+		46AD561A295D69B2006858AC /* IRDToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5619295D69B2006858AC /* IRDToastStyle.swift */; };
+		46AD561D295D6E02006858AC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD561C295D6E02006858AC /* Keychain.swift */; };
+		46AD561F295D6E4A006858AC /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD561E295D6E4A006858AC /* TokenDTO.swift */; };
+		46AD5623295D6F14006858AC /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5622295D6F14006858AC /* UserDefaultsKeys.swift */; };
+		46AD5626295D793F006858AC /* MyProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD5625295D793F006858AC /* MyProfileDTO.swift */; };
 		46D15787295916EA00D3972C /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D15786295916EA00D3972C /* NFCReader.swift */; };
+		46D1578A2959187C00D3972C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D157892959187C00D3972C /* RootView.swift */; };
+		46D1578C2959188F00D3972C /* SceneFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1578B2959188F00D3972C /* SceneFlow.swift */; };
+		46D1578E295918AE00D3972C /* SceneFlowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1578D295918AE00D3972C /* SceneFlowState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +40,18 @@
 		468E78862955346F00328994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		468E788E2955356E00328994 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		468E78D8295730F600328994 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		46AD5612295D6858006858AC /* CodeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDTO.swift; sourceTree = "<group>"; };
+		46AD5616295D6994006858AC /* IRDToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRDToast.swift; sourceTree = "<group>"; };
+		46AD5619295D69B2006858AC /* IRDToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRDToastStyle.swift; sourceTree = "<group>"; };
+		46AD561C295D6E02006858AC /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		46AD561E295D6E4A006858AC /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
+		46AD5622295D6F14006858AC /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		46AD5625295D793F006858AC /* MyProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDTO.swift; sourceTree = "<group>"; };
 		46D15786295916EA00D3972C /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		46D157892959187C00D3972C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		46D1578B2959188F00D3972C /* SceneFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFlow.swift; sourceTree = "<group>"; };
+		46D1578D295918AE00D3972C /* SceneFlowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFlowState.swift; sourceTree = "<group>"; };
+		46D157D62959571E00D3972C /* IRD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IRD.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AD560E295D6651006858AC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +85,7 @@
 		468E786C29551B8500328994 /* IRD */ = {
 			isa = PBXGroup;
 			children = (
+				46D157D62959571E00D3972C /* IRD.entitlements */,
 				468E78862955346F00328994 /* Info.plist */,
 				468E78822955342D00328994 /* Sources */,
 				468E78802955342800328994 /* Resources */,
@@ -83,6 +107,7 @@
 		468E787B29551B9100328994 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				46D157882959187500D3972C /* Root */,
 				468E78D7295730EF00328994 /* Home */,
 				468E787C29551B9400328994 /* Signin */,
 			);
@@ -116,6 +141,8 @@
 		468E78822955342D00328994 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				46AD5614295D6987006858AC /* Shared */,
+				46AD5611295D6853006858AC /* Model */,
 				468E788B2955356400328994 /* Utils */,
 				468E78832955343100328994 /* Application */,
 				468E787B29551B9100328994 /* Scenes */,
@@ -164,12 +191,91 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		46AD5611295D6853006858AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5624295D792C006858AC /* User */,
+				46AD5620295D6E4C006858AC /* Auth */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46AD5614295D6987006858AC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5621295D6F0C006858AC /* UserDefaults */,
+				46AD561B295D6DFE006858AC /* Keychain */,
+				46AD5615295D698C006858AC /* UIComponent */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		46AD5615295D698C006858AC /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5618295D69AB006858AC /* Toast */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		46AD5618295D69AB006858AC /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5616295D6994006858AC /* IRDToast.swift */,
+				46AD5619295D69B2006858AC /* IRDToastStyle.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		46AD561B295D6DFE006858AC /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				46AD561C295D6E02006858AC /* Keychain.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		46AD5620295D6E4C006858AC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5612295D6858006858AC /* CodeDTO.swift */,
+				46AD561E295D6E4A006858AC /* TokenDTO.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		46AD5621295D6F0C006858AC /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5622295D6F14006858AC /* UserDefaultsKeys.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		46AD5624295D792C006858AC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				46AD5625295D793F006858AC /* MyProfileDTO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		46D15785295916E500D3972C /* NFC */ = {
 			isa = PBXGroup;
 			children = (
 				46D15786295916EA00D3972C /* NFCReader.swift */,
 			);
 			path = NFC;
+			sourceTree = "<group>";
+		};
+		46D157882959187500D3972C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				46D157892959187C00D3972C /* RootView.swift */,
+				46D1578B2959188F00D3972C /* SceneFlow.swift */,
+				46D1578D295918AE00D3972C /* SceneFlowState.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +294,9 @@
 			dependencies = (
 			);
 			name = IRD;
+			packageProductDependencies = (
+				46AD560D295D6651006858AC /* Alamofire */,
+			);
 			productName = IRD;
 			productReference = 468E786A29551B8500328994 /* IRD.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +325,9 @@
 				Base,
 			);
 			mainGroup = 468E786129551B8500328994;
+			packageReferences = (
+				46AD560C295D6651006858AC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 468E786B29551B8500328994 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,11 +355,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D1578C2959188F00D3972C /* SceneFlow.swift in Sources */,
 				468E787029551B8500328994 /* ContentView.swift in Sources */,
+				46AD561D295D6E02006858AC /* Keychain.swift in Sources */,
 				468E788F2955356E00328994 /* Color+hex.swift in Sources */,
 				46D15787295916EA00D3972C /* NFCReader.swift in Sources */,
+				46AD561F295D6E4A006858AC /* TokenDTO.swift in Sources */,
 				468E786E29551B8500328994 /* IRDApp.swift in Sources */,
+				46AD5623295D6F14006858AC /* UserDefaultsKeys.swift in Sources */,
+				46AD561A295D69B2006858AC /* IRDToastStyle.swift in Sources */,
+				46AD5617295D6994006858AC /* IRDToast.swift in Sources */,
+				46D1578A2959187C00D3972C /* RootView.swift in Sources */,
+				46AD5626295D793F006858AC /* MyProfileDTO.swift in Sources */,
 				468E78D9295730F600328994 /* HomeView.swift in Sources */,
+				46AD5613295D6858006858AC /* CodeDTO.swift in Sources */,
+				46D1578E295918AE00D3972C /* SceneFlowState.swift in Sources */,
 				468E787E29551B9E00328994 /* SigninView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IRD/IRD.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IRD/Preview Content\"";
@@ -404,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IRD/IRD.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IRD/Preview Content\"";
@@ -451,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46AD560C295D6651006858AC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46AD560D295D6651006858AC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46AD560C295D6651006858AC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 468E786229551B8500328994 /* Project object */;
 }
